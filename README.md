@@ -2,7 +2,7 @@
 
 A full-stack MERN application for monitoring tourist safety in real-time with danger zone detection and emergency response capabilities.
 
-## 🚀 Features
+##  Features
 
 - **Real-time Location Tracking**: Tourists can submit their location coordinates
 - **Danger Zone Detection**: Automatic detection of danger and near-danger zones
@@ -11,7 +11,7 @@ A full-stack MERN application for monitoring tourist safety in real-time with da
 - **Responder Dashboard**: Complete overview of tourists in danger zones only
 - **Modern UI**: Clean, responsive design with real-time updates
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 ### Backend
 - **Node.js** + **Express.js** - Server framework
@@ -24,14 +24,14 @@ A full-stack MERN application for monitoring tourist safety in real-time with da
 - **Socket.io-client** - Real-time client communication
 - **Modern CSS** - Responsive design with animations
 
-## 📋 Prerequisites
+##  Prerequisites
 
 - Node.js (v14 or higher)
 - MongoDB (running on localhost:27017)
 - npm or yarn package manager
 - Twilio account for SMS functionality (optional - can use mock SMS)
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Clone and Setup
 
@@ -128,7 +128,7 @@ Use these coordinates to test different scenarios:
 - **Safe Area**: Lat: 12.800, Lon: 80.000
 - **Remote Location**: Lat: 11.000, Lon: 79.000
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 Tourist-Safety-Monitoring/
@@ -148,7 +148,7 @@ Tourist-Safety-Monitoring/
 └── README.md               # This file
 ```
 
-## 🔧 API Endpoints
+##  API Endpoints
 
 ### POST /api/tourist
 Submit tourist location and get zone detection
@@ -184,7 +184,7 @@ Tourist response to safety check
 ### GET /api/responder
 Get all tourists data for responder dashboard
 
-## 🔌 Socket.io Events
+##  Socket.io Events
 
 ### Server → Client
 - `alert` - Send safety alerts to tourists
@@ -194,11 +194,11 @@ Get all tourists data for responder dashboard
 - `connection` - Client connects to server
 - `disconnect` - Client disconnects
 
-## 🎨 Features in Detail
+##  Features in Detail
 
 ### Real-time Alerts
-- **Danger Zone**: "🚨 Are you okay?" with Yes/No buttons and 20-second countdown
-- **Near Zone**: "⚠️ You are near a danger zone!" warning (not shown to responders)
+- **Danger Zone**: " Are you okay?" with Yes/No buttons and 20-second countdown
+- **Near Zone**: " You are near a danger zone!" warning (not shown to responders)
 - **Safe Zone**: No alerts, normal operation
 - **Timeout**: Automatic "no_response" status after 20 seconds
 
@@ -215,7 +215,7 @@ Get all tourists data for responder dashboard
 - **Color-coded Alerts**: Red for danger, orange for near, green for safe
 - **Clean Typography**: Modern font stack and spacing
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### MongoDB Connection Issues
 ```bash
@@ -241,7 +241,7 @@ npx kill-port 3000
 - Check CORS settings in server.js
 - Verify Socket.io client URL matches server
 
-## 📝 Development Notes
+##  Development Notes
 
 - All coordinates are in decimal degrees format
 - Danger zones use Euclidean distance calculation
@@ -249,7 +249,7 @@ npx kill-port 3000
 - MongoDB stores all tourist data with timestamps
 - React components use hooks for state management
 
-## 🚀 Production Deployment
+##  Production Deployment
 
 For production deployment:
 
@@ -259,7 +259,7 @@ For production deployment:
 4. **Process Manager**: Use PM2 for Node.js process management
 5. **Reverse Proxy**: Use Nginx for load balancing
 
-## 📄 License
+##  License
 
 This project is open source and available under the MIT License.
 
